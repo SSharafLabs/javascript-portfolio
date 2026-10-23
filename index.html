@@ -1,0 +1,1423 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>سيف شرف | Frontend Developer</title>
+    <link rel="icon" href="imgs/favicon.png" />
+    <meta
+      name="description"
+      content="موقع أحمد حسن - مطور واجهات أمامية متخصص في React و Next.js و TypeScript" />
+
+    <!-- Bootstrap (RTL) -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Font Awesome (icons) -->
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;700;800&family=Cairo:wght@400;500;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet" />
+
+    <!-- My styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ^ ================= Navbar ================= -->
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="logo" href="#home">
+            <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+            <span class="logo-text">سيف شرف</span>
+          </a>
+
+          <div class="header-actions order-lg-3">
+            <!-- & Dark / Light switch -->
+
+            <button
+              class="theme-switch"
+              id="themeSwitch"
+              type="button"
+              aria-label="تبديل الوضع الليلي والنهاري">
+              <span class="theme-switch-ball"
+                ><i class="fa-solid fa-moon" id="themeIcon"></i
+              ></span>
+            </button>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainMenu"
+              aria-controls="mainMenu"
+              aria-expanded="false"
+              aria-label="فتح القائمة">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ms-auto menu-list">
+              <li class="nav-item">
+                <a class="menu-link active" href="#home">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="menu-link" href="#about">عني</a>
+              </li>
+              <li class="nav-item">
+                <a class="menu-link" href="#portfolio">الأعمال</a>
+              </li>
+              <li class="nav-item">
+                <a class="menu-link" href="#experience">الخبرة</a>
+              </li>
+              <li class="nav-item">
+                <a class="menu-link" href="#testimonials">التوصيات</a>
+              </li>
+              <li class="nav-item">
+                <a class="menu-link" href="#contact">تواصل</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ? ================= Home / Hero ================= -->
+
+      <section class="hero-section" id="home">
+        <div class="container">
+          <div class="row align-items-center gy-5">
+            <!-- Text side -->
+            <div class="col-lg-6 hero-text">
+              <span class="available-badge"
+                ><span class="available-dot"></span> متاح للشغل الحر</span
+              >
+              <p class="hero-hello">مرحباً، أنا <span class="wave">👋</span></p>
+              <h1 class="hero-name">سيف شرف</h1>
+
+              <div class="hero-job">
+                <span class="hero-job-icon"
+                  ><i class="fa-solid fa-code"></i
+                ></span>
+                <span>Frontend Developer</span>
+              </div>
+
+              <p class="hero-description">
+                بحول أفكارك لـ <strong>تجارب رقمية مميزة</strong>. متخصص في بناء
+                مواقع وتطبيقات ويب حديثة بأحدث التقنيات.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#portfolio" class="button button-main"
+                  >استكشف أعمالي <i class="fa-solid fa-arrow-left"></i
+                ></a>
+                <a href="#contact" class="button button-outline"
+                  ><i class="fa-solid fa-paper-plane"></i> تواصل معي</a
+                >
+              </div>
+
+              <ul class="tech-pills">
+                <li><i class="fa-brands fa-react"></i> React</li>
+                <li><i class="fa-solid fa-code"></i> TypeScript</li>
+                <li><i class="fa-solid fa-wind"></i> Tailwind</li>
+                <li><span class="next-letter">N</span> Next.js</li>
+              </ul>
+            </div>
+
+            <!-- Photo side -->
+            <div class="col-lg-6">
+              <div class="hero-photo-area">
+                <span class="orbit orbit-big"></span>
+                <span class="orbit orbit-small"></span>
+
+                <div class="hero-photo-ring">
+                  <img
+                    src="imgs/Seif Sharaf LinkedIn Photo 1.jpeg"
+                    alt="صورة سيف شرف وهو يعمل على اللابتوب" />
+                </div>
+
+                <span class="floating-icon icon-react"
+                  ><i class="fa-brands fa-react"></i
+                ></span>
+                <span class="floating-icon icon-vue"
+                  ><i class="fa-brands fa-vuejs"></i
+                ></span>
+                <span class="floating-icon icon-code"
+                  ><i class="fa-solid fa-code"></i
+                ></span>
+                <span class="floating-icon icon-figma"
+                  ><i class="fa-brands fa-figma"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-hint" aria-label="انزل للأسفل">
+          <span>اكتشف المزيد</span>
+          <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+        </a>
+      </section>
+
+      <!-- * ================= About ================= -->
+
+      <section class="section about-section" id="about">
+        <div class="container">
+          <div class="row gy-4 align-items-start">
+            <!-- Text side (right) -->
+            <div class="col-lg-6">
+              <h2 class="about-title">
+                بحب أحول <span class="accent-text">لواقع رقمي</span> الأفكار
+              </h2>
+              <p class="about-text">
+                مطور واجهات أمامية بخبرة +8 سنوات في بناء تطبيقات ويب حديثة
+                وتصميم تجارب مستخدم استثنائية.
+              </p>
+              <p class="about-text">
+                بشتغل بأحدث التقنيات زي React و Next.js و TypeScript عشان أقدم
+                حلول عالية الجودة وتعدي التوقعات.
+              </p>
+
+              <ul class="info-chips">
+                <li>
+                  <i class="fa-solid fa-graduation-cap"></i> حاسبات ومعلومات
+                </li>
+                <li><i class="fa-solid fa-briefcase"></i> +50 مشروع</li>
+                <li><i class="fa-solid fa-users"></i> +35 عميل سعيد</li>
+              </ul>
+
+              <div class="offer-card">
+                <h3 class="offer-title">
+                  <i class="fa-solid fa-rocket"></i> ما أقدمه
+                </h3>
+                <ul class="offer-list">
+                  <li>تطوير تطبيقات ويب متكاملة بـ React & Next.js</li>
+                  <li>تصميم واجهات مستخدم حديثة وجذابة</li>
+                  <li>تحسين الأداء وسرعة التحميل</li>
+                  <li>تطوير مواقع متوافقة مع جميع الأجهزة</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Code card (left) -->
+            <div class="col-lg-6">
+              <div class="code-card">
+                <div class="code-card-top">
+                  <div class="window-dots">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                  </div>
+                  <span class="code-file-name">Seif.Js</span>
+                </div>
+                <pre
+                  class="code-block"
+                  dir="ltr"><code><span class="code-comment">// من أنا باختصار</span>
+<span class="code-keyword">const</span> <span class="code-variable">Seif</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"سيف شرف"</span>,
+  <span class="code-property">title</span>: <span class="code-string">"Frontend Developer"</span>,
+  <span class="code-property">experience</span>: <span class="code-number">8</span> + <span class="code-string">" years"</span>,
+  <span class="code-property">location</span>: <span class="code-string">"Cairo, Egypt"</span> <span class="code-tag">EG</span>,
+  <span class="code-property">skills</span>: [
+    <span class="code-string">"React"</span>, <span class="code-string">"Next.js"</span>,
+    <span class="code-string">"TypeScript"</span>, <span class="code-string">"Tailwind"</span>
+  ],
+  <span class="code-property">passion</span>: <span class="code-string">"Creating pixel-perfect UIs"</span>,
+  <span class="code-property">available</span>: <span class="code-keyword">true</span>,
+  <span class="code-property">hireable</span>: <span class="code-keyword">true</span>
+};
+
+<span class="code-keyword">export default</span> <span class="code-variable">Seif</span>;</code></pre>
+              </div>
+
+              <div class="row g-3 mini-cards">
+                <div class="col-4">
+                  <div class="mini-card">
+                    <i class="fa-solid fa-laptop-code"></i><span>كود نظيف</span>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="mini-card">
+                    <i class="fa-solid fa-bolt"></i><span>أداء عالي</span>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="mini-card">
+                    <i class="fa-solid fa-mobile-screen"></i
+                    ><span>تصميم متجاوب</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--! ================= Skills ================= -->
+
+      <section class="section skills-section" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">مهاراتي</span>
+            <h2 class="section-title">
+              المهارات و <span class="accent-text">التقنيات</span>
+            </h2>
+            <span class="title-line"></span>
+          </div>
+
+          <div class="row g-3 g-lg-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="skill-card">
+                <div class="skill-top">
+                  <h3 class="skill-name">React.js</h3>
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="skill-bar">
+                  <span
+                    class="skill-fill skill-fill-blue"
+                    data-level="95"></span>
+                </div>
+                <p class="skill-text">
+                  خبرة متقدمة في بناء تطبيقات React معقدة
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="skill-card">
+                <div class="skill-top">
+                  <h3 class="skill-name">Next.js</h3>
+                  <span class="skill-letter">N</span>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" data-level="90"></span>
+                </div>
+                <p class="skill-text">تطوير تطبيقات SSR وSSG متقدمة</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="skill-card">
+                <div class="skill-top">
+                  <h3 class="skill-name">TypeScript</h3>
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" data-level="88"></span>
+                </div>
+                <p class="skill-text">كتابة كود آمن ومنظم بشكل احترافي</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="skill-card">
+                <div class="skill-top">
+                  <h3 class="skill-name">Tailwind CSS</h3>
+                  <i class="fa-solid fa-wind"></i>
+                </div>
+                <div class="skill-bar">
+                  <span
+                    class="skill-fill skill-fill-blue"
+                    data-level="97"></span>
+                </div>
+                <p class="skill-text">تصميم واجهات بسرعة عالية</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="skill-card">
+                <div class="skill-top">
+                  <h3 class="skill-name">Node.js</h3>
+                  <i class="fa-brands fa-node-js"></i>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" data-level="85"></span>
+                </div>
+                <p class="skill-text">بناء APIs وخدمات الخلفية</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="skill-card">
+                <div class="skill-top">
+                  <h3 class="skill-name">Figma</h3>
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="skill-bar">
+                  <span class="skill-fill" data-level="92"></span>
+                </div>
+                <p class="skill-text">تصميم واجهات احترافية ونماذج تفاعلية</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small tools row -->
+          <div class="row g-3 g-lg-4 tools-row">
+            <div class="col-6 col-md-3">
+              <div class="tool-card">
+                <i class="fa-brands fa-html5 tool-html"></i><span>HTML5</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="tool-card">
+                <i class="fa-brands fa-css3-alt tool-css"></i><span>CSS3</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="tool-card">
+                <i class="fa-brands fa-square-js tool-js"></i
+                ><span>JavaScript</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="tool-card">
+                <i class="fa-brands fa-git-alt tool-git"></i><span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ^ ================= Portfolio ================= -->
+      <section class="section portfolio-section" id="portfolio">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">أعمالي</span>
+            <h2 class="section-title">
+              معرض <span class="accent-text">المشاريع</span>
+            </h2>
+            <span class="title-line"></span>
+          </div>
+
+          <!-- Tabs (made with JavaScript, not Bootstrap tabs) -->
+          <div class="portfolio-tabs" id="portfolioTabs">
+            <button class="tab-button active" type="button" data-filter="all">
+              الكل
+            </button>
+            <button class="tab-button" type="button" data-filter="web">
+              مواقع الويب
+            </button>
+            <button class="tab-button" type="button" data-filter="app">
+              التطبيقات
+            </button>
+            <button class="tab-button" type="button" data-filter="design">
+              التصميم
+            </button>
+            <button class="tab-button" type="button" data-filter="ecommerce">
+              التجارة الإلكترونية
+            </button>
+          </div>
+
+          <!-- * Full Ecommerce Website -->
+
+          <div class="row g-4" id="projectList">
+            <div class="col-md-6 col-lg-4 project-item" data-category="web">
+              <article class="project-card">
+                <div class="project-image">
+                  <img
+                    src="imgs/portfolio-1-BBJ9HaD5.png"
+                    alt="متجر إلكتروني متكامل"
+                    loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <div class="project-top">
+                    <span class="project-badge">موقع ويب</span>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="معاينة المشروع"
+                        ><i class="fa-solid fa-eye"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="الكود على جيت هب"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <h3 class="project-title">متجر إلكتروني متكامل</h3>
+                  <p class="project-text">
+                    منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
+                  </p>
+                  <ul class="project-tags">
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <!-- ! Management Application  -->
+
+            <div class="col-md-6 col-lg-4 project-item" data-category="app">
+              <article class="project-card">
+                <div class="project-image">
+                  <img
+                    src="imgs/portfolio-2-F8b-iTfx.png"
+                    alt="تطبيق إدارة المهام"
+                    loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <div class="project-top">
+                    <span class="project-badge">تطبيق</span>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="معاينة المشروع"
+                        ><i class="fa-solid fa-eye"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="الكود على جيت هب"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <h3 class="project-title">تطبيق إدارة المهام</h3>
+                  <p class="project-text">
+                    تطبيق ويب تفاعلي لإدارة المهام مع ميزات التعاون الجماعي
+                  </p>
+                  <ul class="project-tags">
+                    <li>Vue.js</li>
+                    <li>Firebase</li>
+                    <li>Tailwind</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <!-- ? Creative Portfolio Website -->
+
+            <div class="col-md-6 col-lg-4 project-item" data-category="design">
+              <article class="project-card">
+                <div class="project-image">
+                  <img
+                    src="imgs/portfolio-3-CorL6bc5.png"
+                    alt="موقع شخصي إبداعي"
+                    loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <div class="project-top">
+                    <span class="project-badge">تصميم</span>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="معاينة المشروع"
+                        ><i class="fa-solid fa-eye"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="التصميم على فيجما"
+                        ><i class="fa-brands fa-figma"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <h3 class="project-title">موقع شخصي إبداعي</h3>
+                  <p class="project-text">
+                    تصميم موقع شخصي بأسلوب عصري وألوان جريئة
+                  </p>
+                  <ul class="project-tags">
+                    <li>Figma</li>
+                    <li>UI/UX</li>
+                    <li>Prototype</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <!-- & Consultancy Company Website -->
+
+            <div class="col-md-6 col-lg-4 project-item" data-category="web">
+              <article class="project-card">
+                <div class="project-image">
+                  <img
+                    src="imgs/portfolio-4-TS862Pxr.png"
+                    alt="موقع شركة استشارية"
+                    loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <div class="project-top">
+                    <span class="project-badge">موقع ويب</span>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="معاينة المشروع"
+                        ><i class="fa-solid fa-eye"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="الكود على جيت هب"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <h3 class="project-title">موقع شركة استشارية</h3>
+                  <p class="project-text">
+                    موقع احترافي لشركة استشارات مع نظام حجز المواعيد
+                  </p>
+                  <ul class="project-tags">
+                    <li>Next.js</li>
+                    <li>TypeScript</li>
+                    <li>Prisma</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <!-- ^ Social Analytics Dashboard -->
+
+            <div class="col-md-6 col-lg-4 project-item" data-category="app">
+              <article class="project-card">
+                <div class="project-image">
+                  <img
+                    src="imgs/portfolio-5-CA5zqLPi.png"
+                    alt="لوحة تحليلات اجتماعية"
+                    loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <div class="project-top">
+                    <span class="project-badge">تطبيق</span>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="معاينة المشروع"
+                        ><i class="fa-solid fa-eye"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="الكود على جيت هب"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <h3 class="project-title">لوحة تحليلات اجتماعية</h3>
+                  <p class="project-text">
+                    منصة تحليل وإدارة حسابات التواصل الاجتماعي
+                  </p>
+                  <ul class="project-tags">
+                    <li>React</li>
+                    <li>Chart.js</li>
+                    <li>API</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <!-- * Fashion Ecommerce Store -->
+
+            <div
+              class="col-md-6 col-lg-4 project-item"
+              data-category="ecommerce">
+              <article class="project-card">
+                <div class="project-image">
+                  <img
+                    src="imgs/portfolio-6-BG34qIjS.png"
+                    alt="متجر أزياء فاخر"
+                    loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <div class="project-top">
+                    <span class="project-badge">تجارة</span>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="معاينة المشروع"
+                        ><i class="fa-solid fa-eye"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="الكود على جيت هب"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <h3 class="project-title">متجر أزياء فاخر</h3>
+                  <p class="project-text">
+                    منصة تسوق راقية للأزياء مع تجربة مستخدم استثنائية
+                  </p>
+                  <ul class="project-tags">
+                    <li>Next.js</li>
+                    <li>Stripe</li>
+                    <li>Sanity</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <!-- ? Restaurant Website -->
+
+            <div class="col-md-6 col-lg-4 project-item" data-category="web">
+              <article class="project-card">
+                <div class="project-image">
+                  <img
+                    src="imgs/portfolio-7-D_mGnQLw.png"
+                    alt="موقع مطعم راقي"
+                    loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <div class="project-top">
+                    <span class="project-badge">موقع ويب</span>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="معاينة المشروع"
+                        ><i class="fa-solid fa-eye"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="الكود على جيت هب"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <h3 class="project-title">موقع مطعم راقٍ</h3>
+                  <p class="project-text">
+                    موقع لمطعم مع قائمة طعام تفاعلية ونظام حجز الطاولات
+                  </p>
+                  <ul class="project-tags">
+                    <li>React</li>
+                    <li>Tailwind</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <!-- ~ Meal Preparation Application -->
+
+            <div class="col-md-6 col-lg-4 project-item" data-category="app">
+              <article class="project-card">
+                <div class="project-image">
+                  <img
+                    src="imgs/portfolio-8-DmiljHRz.png"
+                    alt="تطبيق تخطيط الوجبات"
+                    loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <div class="project-top">
+                    <span class="project-badge">تطبيق</span>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="معاينة المشروع"
+                        ><i class="fa-solid fa-eye"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="الكود على جيت هب"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <h3 class="project-title">تطبيق تخطيط الوجبات</h3>
+                  <p class="project-text">
+                    تطبيق لتخطيط الوجبات الأسبوعية ومتابعة السعرات الحرارية
+                  </p>
+                  <ul class="project-tags">
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>API</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 project-item" data-category="design">
+              <article class="project-card">
+                <div class="project-image">
+                  <img
+                    src="imgs/portfolio-9-BwS52lpH.png"
+                    alt="تصميم تطبيق جوال"
+                    loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <div class="project-top">
+                    <span class="project-badge">تصميم</span>
+                    <div class="project-links">
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="معاينة المشروع"
+                        ><i class="fa-solid fa-eye"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="project-link"
+                        aria-label="التصميم على فيجما"
+                        ><i class="fa-brands fa-figma"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <h3 class="project-title">تصميم تطبيق جوال</h3>
+                  <p class="project-text">
+                    تصميم UI/UX كامل لتطبيق جوال متعدد الوظائف
+                  </p>
+                  <ul class="project-tags">
+                    <li>Figma</li>
+                    <li>Adobe XD</li>
+                    <li>Sketch</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="text-center portfolio-footer">
+            <a href="#contact" class="button button-main"
+              >نبدأ مشروعك القادم <i class="fa-solid fa-rocket"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ! ================= Experience ================= -->
+
+      <section class="section experience-section" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">مسيرتي المهنية</span>
+            <h2 class="section-title">
+              الخبرة <span class="accent-text">العملية</span>
+            </h2>
+            <span class="title-line"></span>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <i class="fa-solid fa-laptop-code timeline-icon"></i>
+                  <span class="timeline-date">الآن - 2022</span>
+                </div>
+                <h3 class="timeline-title">مطور واجهات أمامية أول</h3>
+                <p class="timeline-company">شركة التقنية المتقدمة</p>
+                <p class="timeline-text">
+                  قيادة فريق الواجهات الأمامية وبناء تطبيقات ويب كبيرة بـ React
+                  و Next.js مع التركيز على الأداء وتجربة المستخدم.
+                </p>
+                <ul class="project-tags">
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>TypeScript</li>
+                  <li>Tailwind</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <i class="fa-solid fa-laptop-code timeline-icon"></i>
+                  <span class="timeline-date">2022 - 2020</span>
+                </div>
+                <h3 class="timeline-title">مطور Full Stack</h3>
+                <p class="timeline-company">استوديو الإبداع الرقمي</p>
+                <p class="timeline-text">
+                  تطوير أكثر من 25 موقع وتطبيق ويب للعملاء. العمل على مشاريع
+                  متنوعة من التجارة الإلكترونية إلى المنصات التعليمية باستخدام
+                  MERN Stack.
+                </p>
+                <ul class="project-tags">
+                  <li>Node.js</li>
+                  <li>React</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card">
+                <div class="timeline-top">
+                  <i class="fa-solid fa-code timeline-icon"></i>
+                  <span class="timeline-date">2020 - 2019</span>
+                </div>
+                <h3 class="timeline-title">مطور واجهات أمامية</h3>
+                <p class="timeline-company">وكالة التسويق الرقمي</p>
+                <p class="timeline-text">
+                  تطوير واجهات مستخدم تفاعلية ومتجاوبة لحملات تسويقية متعددة.
+                  التعاون مع فريق التصميم لتحويل النماذج إلى تطبيقات عملية.
+                </p>
+                <ul class="project-tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Sass</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- todo ================= Testimonials ================= -->
+
+      <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">ماذا يقولون عني</span>
+            <h2 class="section-title">
+              آراء <span class="accent-text">العملاء</span>
+            </h2>
+            <span class="title-line"></span>
+          </div>
+
+          <!-- Slider (built with JavaScript) -->
+          <div class="slider">
+            <button
+              class="slider-arrow slider-prev"
+              id="sliderPrev"
+              type="button"
+              aria-label="السابق">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- ! Ahmed Refaai Card -->
+
+            <div class="slider-window">
+              <div class="slider-track" id="sliderTrack">
+                <div class="slider-item">
+                  <article class="review-card">
+                    <div class="review-person">
+                      <img
+                        class="review-avatar"
+                        src="imgs/avatar-4-EAD2OaMD.avif  "
+                        alt="أحمد الرفاعي" />
+                      <div>
+                        <h3 class="review-name">أحمد الرفاعي</h3>
+                        <p class="review-job">جرافيك ديزاينر</p>
+                      </div>
+                    </div>
+                    <div class="review-stars">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                      "تجربة ممتازة من الأول للآخر. أحمد سمع طلباتنا كويس وقدم
+                      أفكار برة الصندوق. الموقع الجديد عجب العملاء جداً."
+                    </p>
+                  </article>
+                </div>
+
+                <!-- ? Omar Adel Card -->
+
+                <div class="slider-item">
+                  <article class="review-card">
+                    <div class="review-person">
+                      <img
+                        class="review-avatar"
+                        src="imgs/avatar-5-CDQD_dyw.jpg"
+                        alt="عمر عادل" />
+                      <div>
+                        <h3 class="review-name">عمر عادل</h3>
+                        <p class="review-job">مؤسس شركة ناشئة</p>
+                      </div>
+                    </div>
+                    <div class="review-stars">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                      "أحمد ساعدنا نحول الفكرة لواقع. الـ MVP اللي عمله كان
+                      ممتاز عشان نجذب مستثمرين. شطارة تقنية وإبداع ملوش حل."
+                    </p>
+                  </article>
+                </div>
+
+                <!-- * Karim Yasser Card -->
+
+                <div class="slider-item">
+                  <article class="review-card">
+                    <div class="review-person">
+                      <img
+                        class="review-avatar"
+                        src="imgs/avatar-6-CMLrVfwj.avif"
+                        alt="كريم ياسر" />
+                      <div>
+                        <h3 class="review-name">كريم ياسر</h3>
+                        <p class="review-job">دكتور صيدلي</p>
+                      </div>
+                    </div>
+                    <div class="review-stars">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                      "الشغل مع أحمد كان مريح ومنظم جداً. دايماً بيبعت تحديثات
+                      وبيرد بسرعة على أي تعديل. النتيجة النهائية أحسن من اللي
+                      كنا متخيلينه."
+                    </p>
+                  </article>
+                </div>
+
+                <!-- todo Khaled Salah Card -->
+
+                <div class="slider-item">
+                  <article class="review-card">
+                    <div class="review-person">
+                      <img
+                        class="review-avatar"
+                        src="imgs/avatar-3-MKRsHcFc.jpg"
+                        alt="خالد صلاح" />
+                      <div>
+                        <h3 class="review-name">خالد صلاح</h3>
+                        <p class="review-job">مدير تطوير الأعمال</p>
+                      </div>
+                    </div>
+                    <div class="review-stars">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                      "شغل محترفين بجد ومواعيد مظبوطة. التطبيق اللي عمله لنا
+                      شغال زي الفل على كل الأجهزة. بننصح بيه جداً لأي مشروع."
+                    </p>
+                  </article>
+                </div>
+
+                <!-- ~ Seif Ossama Card -->
+
+                <div class="slider-item">
+                  <article class="review-card">
+                    <div class="review-person">
+                      <img
+                        class="review-avatar"
+                        src="imgs/avatar-2-CwUcGkzI.jpg"
+                        alt="سيف أسامة" />
+                      <div>
+                        <h3 class="review-name">سيف أسامة</h3>
+                        <p class="review-job">ميديا باير</p>
+                      </div>
+                    </div>
+                    <div class="review-stars">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                      "المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا
+                      زادت 60% في أول شهر. شكراً يا أحمد على المجهود الجبار!"
+                    </p>
+                  </article>
+                </div>
+
+                <!-- & Nora Hossam Card -->
+
+                <div class="slider-item">
+                  <article class="review-card">
+                    <div class="review-person">
+                      <img
+                        class="review-avatar"
+                        src="imgs/Nora Hossam Avatar.jpeg"
+                        alt="نورا" />
+
+                      <div>
+                        <h3 class="review-name">نورا حسام</h3>
+                        <p class="review-job">مديرة تسويق</p>
+                      </div>
+                    </div>
+                    <div class="review-stars">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                      "الموقع طلع أجمل من توقعاتنا وسرعته ممتازة. أحمد بيفهم
+                      شغله كويس وبيلتزم بالمواعيد دايماً."
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="slider-arrow slider-next"
+              id="sliderNext"
+              type="button"
+              aria-label="التالي">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+          </div>
+
+          <div class="slider-dots" id="sliderDots"></div>
+
+          <!-- Call to action -->
+          <div class="cta-box">
+            <h3 class="cta-title">جاهز تبدأ مشروعك؟</h3>
+            <p class="cta-text">يلا نشتغل سوا عشان نحول أفكارك لواقع مبهر</p>
+            <div class="cta-buttons">
+              <a href="#contact" class="button button-main">تواصل معي الآن</a>
+              <a href="#portfolio" class="button button-white"
+                >شاهد المزيد من الأعمال</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Numbers -->
+        <div class="stats-band">
+          <div class="container">
+            <div class="row g-4 text-center">
+              <div class="col-6 col-md-3">
+                <span class="stat-icon"
+                  ><i class="fa-solid fa-diagram-project"></i
+                ></span>
+                <h3 class="stat-number">+50</h3>
+                <p class="stat-label">مشروع مكتمل</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <span class="stat-icon"><i class="fa-solid fa-users"></i></span>
+                <h3 class="stat-number">+35</h3>
+                <p class="stat-label">عميل سعيد</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <span class="stat-icon"><i class="fa-solid fa-clock"></i></span>
+                <h3 class="stat-number">+8</h3>
+                <p class="stat-label">سنوات خبرة</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <span class="stat-icon"
+                  ><i class="fa-solid fa-trophy"></i
+                ></span>
+                <h3 class="stat-number">+12</h3>
+                <p class="stat-label">جائزة وتقدير</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Contact ================= -->
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">تواصل معي</span>
+            <h2 class="section-title">
+              يلا نبدأ <span class="accent-text">مشروعك</span>
+            </h2>
+            <span class="title-line"></span>
+            <p class="section-note">
+              عندك فكرة مشروع؟ تعالى نتكلم ونحولها لواقع
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Info side (right) -->
+            <div class="col-lg-6 order-lg-1">
+              <div class="contact-card">
+                <span class="contact-icon"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <div>
+                  <p class="contact-label">البريد الإلكتروني</p>
+                  <p class="contact-value">hello@seifsharaf.dev</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <span class="contact-icon"
+                  ><i class="fa-solid fa-phone"></i
+                ></span>
+                <div>
+                  <p class="contact-label">رقم الهاتف</p>
+                  <p class="contact-value" dir="ltr">+20 1103439784</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <span class="contact-icon"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <div>
+                  <p class="contact-label">الموقع</p>
+                  <p class="contact-value">القاهرة، مصر</p>
+                  <p class="contact-small">متاح للعمل عن بعد</p>
+                </div>
+              </div>
+
+              <div class="social-box">
+                <h3 class="social-title">تابعني على</h3>
+                <div class="social-links">
+                  <a href="https://github.com/SSharafLabs" aria-label="جيت هب"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/seif-sharaf/"
+                    aria-label="لينكدإن"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="#" aria-label="تويتر"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" aria-label="دريبل"
+                    ><i class="fa-brands fa-dribbble"></i
+                  ></a>
+                  <a href="#" aria-label="بيهانس"
+                    ><i class="fa-brands fa-behance"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form side (left) -->
+            <div class="col-lg-6 order-lg-2">
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <label for="fullName">الاسم الكامل</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    placeholder="اكتب اسمك هنا"
+                    required />
+                </div>
+                <div class="form-group">
+                  <label for="email">البريد الإلكتروني</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="example@email.com"
+                    required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">رقم الهاتف</label>
+                  <input type="tel" id="phone" placeholder="+20 10 XXXX XXXX" />
+                </div>
+                <div class="form-group">
+                  <label for="projectType">نوع المشروع</label>
+                  <select id="projectType" required>
+                    <option value="" selected disabled>اختر نوع المشروع</option>
+                    <option>موقع تعريفي</option>
+                    <option>متجر إلكتروني</option>
+                    <option>تطبيق ويب</option>
+                    <option>تصميم UI/UX</option>
+                    <option>أخرى</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="budget">الميزانية المتوقعة</label>
+                  <select id="budget">
+                    <option value="" selected disabled>اختر الميزانية</option>
+                    <option>أقل من 500$</option>
+                    <option>من 500$ إلى 1000$</option>
+                    <option>من 1000$ إلى 3000$</option>
+                    <option>أكثر من 3000$</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="details">تفاصيل المشروع</label>
+                  <textarea
+                    id="details"
+                    rows="5"
+                    placeholder="احكيلي تفاصيل مشروعك..."
+                    required></textarea>
+                </div>
+                <button type="submit" class="button button-main button-full">
+                  ابعت الرسالة <i class="fa-solid fa-paper-plane"></i>
+                </button>
+                <p class="form-message" id="formMessage" role="status"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <a class="logo" href="#home">
+              <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+              <span class="logo-text">سيف شرف</span>
+            </a>
+            <p class="footer-text">
+              أنا مش بس بكتب كود، بل بخلق تجربة مستخدم سلسة مع الأداء القوي عشان
+              أقدم منتج نهائي متكامل.
+            </p>
+            <a href="#" class="button button-dark"
+              ><i class="fa-solid fa-arrow-left"></i> تحميل السيرة الذاتية
+              (CV)</a
+            >
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <h4 class="footer-title">روابط سريعة</h4>
+            <ul class="footer-list">
+              <li><a href="#home">الرئيسية</a></li>
+              <li><a href="#about">عني</a></li>
+              <li><a href="#portfolio">الأعمال</a></li>
+              <li><a href="#experience">الخبرة</a></li>
+              <li><a href="#testimonials">التوصيات</a></li>
+              <li><a href="#contact">تواصل</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-4">
+            <h4 class="footer-title">الخدمات</h4>
+            <ul class="footer-list">
+              <li><a href="#contact">تطوير الويب</a></li>
+              <li><a href="#contact">تطوير التطبيقات</a></li>
+              <li><a href="#contact">تصميم UI/UX</a></li>
+              <li><a href="#contact">الاستشارات التقنية</a></li>
+              <li><a href="#contact">تحسين الأداء</a></li>
+              <li><a href="#contact">الصيانة والدعم</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer-copy">© 2026 سيف شرف. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+
+    <!-- ================= Settings (gear) ================= -->
+    <button
+      class="settings-button"
+      id="openSettings"
+      type="button"
+      aria-label="فتح إعدادات المظهر">
+      <i class="fa-solid fa-gear"></i>
+    </button>
+
+    <div class="settings-overlay" id="settingsOverlay"></div>
+
+    <aside class="settings-panel" id="settingsPanel" aria-label="تخصيص المظهر">
+      <div class="settings-header">
+        <h3 class="settings-title">
+          <i class="fa-solid fa-sliders"></i> تخصيص المظهر
+        </h3>
+        <button
+          class="settings-close"
+          id="closeSettings"
+          type="button"
+          aria-label="إغلاق">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="settings-body">
+        <h4 class="settings-label">
+          <i class="fa-solid fa-font"></i> نوع الخط
+        </h4>
+        <div class="font-options" id="fontOptions">
+          <button class="font-card" type="button" data-font="Alexandria">
+            <strong class="font-name font-alexandria">Alexandria</strong
+            ><small class="font-alexandria">Alexandria</small>
+          </button>
+          <button class="font-card active" type="button" data-font="Tajawal">
+            <i class="fa fa-circle-check"></i>
+            <strong class="font-name font-tajawal">Tajawal</strong
+            ><small class="font-tajawal">الخط الافتراضي</small>
+          </button>
+          <button class="font-card" type="button" data-font="Cairo">
+            <strong class="font-name font-cairo">Cairo</strong
+            ><small class="font-cairo">Cairo</small>
+          </button>
+        </div>
+
+        <h4 class="settings-label">
+          <i class="fa-solid fa-palette"></i> لون الثيم
+        </h4>
+        <div class="color-options" id="colorOptions">
+          <button
+            class="color-dot"
+            type="button"
+            data-main="#0ea5e9"
+            data-second="#3b82f6"
+            style="--dot-main: #0ea5e9; --dot-second: #3b82f6"
+            aria-label="أزرق"></button>
+          <button
+            class="color-dot"
+            type="button"
+            data-main="#10b981"
+            data-second="#059669"
+            style="--dot-main: #10b981; --dot-second: #059669"
+            aria-label="أخضر"></button>
+          <button
+            class="color-dot"
+            type="button"
+            data-main="#ec4899"
+            data-second="#f97316"
+            style="--dot-main: #ec4899; --dot-second: #f97316"
+            aria-label="وردي"></button>
+          <button
+            class="color-dot active"
+            type="button"
+            data-main="#6366f1"
+            data-second="#a855f7"
+            style="--dot-main: #6366f1; --dot-second: #a855f7"
+            aria-label="بنفسجي"></button>
+          <button
+            class="color-dot"
+            type="button"
+            data-main="#f97316"
+            data-second="#f59e0b"
+            style="--dot-main: #f97316; --dot-second: #f59e0b"
+            aria-label="برتقالي"></button>
+          <button
+            class="color-dot"
+            type="button"
+            data-main="#ef4444"
+            data-second="#e11d48"
+            style="--dot-main: #ef4444; --dot-second: #e11d48"
+            aria-label="أحمر"></button>
+        </div>
+      </div>
+
+      <div class="settings-footer">
+        <button class="reset-button" id="resetSettings" type="button">
+          <i class="fa-solid fa-rotate-right"></i> إعادة الضبط
+        </button>
+      </div>
+    </aside>
+
+    <!-- ================= Scroll to top ================= -->
+    <button
+      class="top-button"
+      id="topButton"
+      type="button"
+      aria-label="الرجوع لأعلى الصفحة">
+      <i class="fa-solid fa-rocket"></i>
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
